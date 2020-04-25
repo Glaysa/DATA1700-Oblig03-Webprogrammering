@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Kino Billett - Oblig 03</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="header"><h2>Bestilling av Kinobilletter</h2></div>
+            <form id="form">
+                <div class="form-group">
+                    <label for="film">Velg Film:</label>
+                    <select id="film" class="form-control">
+                        <option value="SpiderMan">SpiderMan</option>
+                        <option value="Batman">Batman</option>
+                        <option value="Titanic">Titanic</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="qty">Antall:</label>
+                    <input type="number" class="form-control" autocomplete="off" id="qty">
+                    <p id="err-qty" class="err"></p>
+                </div>
+
+                <div class="form-group">
+                    <label for="fname">Fornavn:</label>
+                    <input type="text" class="form-control" autocomplete="off" id="fname">
+                    <p id="err-fname" class="err"></p>
+                </div>
+
+                <div class="form-group">
+                    <label for="lname">Etternavn:</label>
+                    <input type="text" class="form-control" autocomplete="off" id="lname">
+                    <p id="err-lname" class="err"></p>
+                </div>
+
+                <div class="form-group">
+                    <label for="tlf">Tlf:</label>
+                    <input type="number" class="form-control" autocomplete="off" id="tlf">
+                    <p id="err-tlf" class="err"></p>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" autocomplete="off" id="email">
+                    <p id="err-email" class="err"></p>
+                </div>
+
+                <input class="btn btn-primary" type="button" id="buyButton" value="Kjøp Billett"><br>
+            </form>
+        </div>
+
+        <div class="col-md-8">
+            <h3>Alle Billetter:</h3>
+            <div id="display-container"></div>
+            <input class="btn btn-danger" type="button" id="delButton" value="Slett Billetter">
+        </div>
+    </div>
+</div>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,11 @@
+CREATE TABLE Customer(
+    id INTEGER AUTO_INCREMENT NOT NULL ,
+    fname VARCHAR(255) NOT NULL ,
+    lname VARCHAR(255) NOT NULL ,
+    email VARCHAR(255) NOT NULL ,
+    film VARCHAR(255) NOT NULL ,
+    tlf VARCHAR(255) NOT NULL ,
+    qty VARCHAR(255) NOT NULL ,
+
+    PRIMARY KEY (id)
+);
